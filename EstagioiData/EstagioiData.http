@@ -1,0 +1,6 @@
+@EstagioiData_HostAddress = http://localhost:5250
+
+GET {{EstagioiData_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
