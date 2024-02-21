@@ -2,7 +2,7 @@
 
 namespace EstagioiData.ViewModel
 {
-    public class RecruitmentViewModel
+    public class RecruitmentViewModel // ViewModel que representa os dados da tabela para uso nas camadas de apresentação
     {
         public int Id { get; set; }
         public string? Exportador { get; set; }

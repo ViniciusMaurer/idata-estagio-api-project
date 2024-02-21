@@ -4,8 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EstagioiData.Model
 {
-    [Table("recruitment")] //identifica o nome correto da tabela
-    public class Recruitment
+    [Table("recruitment")] // Identifica o nome correto da tabela no banco de dados
+    public class Recruitment // Classe que representa os dados da tabela
     {
         [Key]
         public int Id { get; set; }
@@ -27,6 +27,7 @@ namespace EstagioiData.Model
         public string? Destino { get; set; }
         public DateTime? LiberadoParaFaturamento { get; set; }
 
+        // Construtor da classe que inicializa os campos da tabela
         public Recruitment(int id, 
                            string? exportador, 
                            string? importador, 
@@ -47,6 +48,7 @@ namespace EstagioiData.Model
                            DateTime? liberadoParaFaturamento
                            )
         {
+            // Inicializa os campos com os valores passados como parâmetros
             Id = id;
             Exportador = exportador;
             Importador = importador;
